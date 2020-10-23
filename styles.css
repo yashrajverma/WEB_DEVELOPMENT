@@ -1,0 +1,233 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.banner {
+    position: relative;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background: url("banner.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    padding: 100px;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+header {
+    padding: 40px 100px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #2196f3;
+}
+
+.heading {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #111;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contentBx h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contentBx p {
+    margin-bottom: 20px;
+}
+
+.contentBx {
+    padding: 30px;
+}
+
+.w50 {
+    min-width: 50%;
+}
+.img{
+    min-width: 50%;
+}
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+.service{
+    background: #111;
+
+}
+.heading-white{
+    color: #fff;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.service .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.service .content .serviceBx{
+    padding: 40px 20px ;
+    background: #222;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    max-width: 340px;
+}
+.service .content .serviceBx:hover{
+    background: #2196f3;
+}
+.service .content .serviceBx img{
+    max-width: 80px;
+    filter:invert(1);
+}
+.service .content .serviceBx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.work .content{
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+.work  .content .workBx{
+    width: 50%;
+    padding: 20px;
+}
+.work .content .workBx img{
+    max-width: 100%;
+}
+.testimonial{
+    background: #f7f7f7;
+}
+.testimonial .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonial .content .testimonialBx{
+
+    min-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+.testimonial .content .testimonialBx p{
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+.testimonial .content .testimonialBx h3{
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1rem;
+    font-size: 20px;
+}
+.testimonial .content .testimonialBx h3 span{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+

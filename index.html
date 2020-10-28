@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+<div id="progressBar"></div>
 <header>
     <a href="#" class="logo">Portfolio</a>
     <div class="toggle"></div>
@@ -149,6 +150,15 @@
         var header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
     });
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop(),
+            dh = $(document).height(),
+            wh = $(window).height();
+        scrollPercent = (scroll / (dh - wh)) * 100;
+        $("#progressBar").css("height", scrollPercent + "%");
+    });
+
 </script>
 
 </body>
